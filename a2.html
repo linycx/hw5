@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>110540012林以晨作業11</title>
+  <title>110540012林以晨</title>
   <meta name="description" content="free website template" />
   <meta name="keywords" content="enter your keywords here" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -25,68 +25,104 @@
         $('#slider').nivoSlider();
     });
     </script>
-  <script>
-    function show()
-    {
-      a1 = parseInt(t1.value)
-      if(a1>=60)
-      {
-        document.getElementById("p1").innerHTML = a1+"及格"
-      }
-      else
-      {
-        document.getElementById("p1").innerHTML = a1+"不及格"
-      }
-    }
-  </script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P8QL4NXVT1"></script>
+<script>
+  function show1()
+  {
+      document.getElementById("a1").className= "red1"
+      document.getElementById("b1").className= "red1"
+      document.getElementById("a3").className= "red1"
+      document.getElementById("b3").className= "red1"
+      document.getElementById("a5").className= "red1"
+      document.getElementById("b5").className= "red1"
+      document.getElementById("a7").className= "red1"
+      document.getElementById("b7").className= "red1"
+  }
+  function show2()
+  {
+      document.getElementById("a2").className= "pur1"
+      document.getElementById("b2").className= "pur1"
+      document.getElementById("a4").className= "pur1"
+      document.getElementById("b4").className= "pur1"
+      document.getElementById("a6").className= "pur1"
+      document.getElementById("b6").className= "pur1"
+      document.getElementById("a8").className= "pur1"
+      document.getElementById("b8").className= "pur1"
+  }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DGMGL4TR4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-P8QL4NXVT1');
+  gtag('config', 'G-1DGMGL4TR4');
 </script>
 </head>
 
 <body>
   <div id="main">	
-	<div id="menubar">
-      <ul class="lavaLampWithImage" id="lava_menu">
-        <li class="current"><a href="index.html">首頁</a></li>
-        <li><a href="a1.html">第一題</a></li>
-        <li><a href="a2.html">第二題</a></li>
-        <li><a href="a3.html">第三題</a></li>
-        <li><a href="a4.html">第四題</a></li>
-        <li><a href="a5.html">GSC截圖</a></li>
-        <li><a href="a6.html">GA截圖</a></li>
-      </ul>
-	</div><!--close menubar-->	    
-	<div id="site_content">        	  
-	  <div id="header"> 
-        <div id="header_name"> 	  
-          <h1>林以晨 作業11</h1>
-        </div><!--close header_name-->	
-        <div id="header_slogan"> 		
-	      <h2>Company Slogan Goes Here</h2>
-		 </div><!--close header_slogan-->	
+    <div id="site_content">  
+	  <div id="menubar">
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">首頁</a></li>
+          <li><a href="a1.html">第1題</a></li>
+          <li><a href="a2.html">第2題</a></li>
+          <li><a href="a3.html">第3題</a></li>
+          <li><a href="a4.html">GSC截圖</a></li>
+          <li><a href="a5.html">GA截圖</a></li>
+          <li><a href="a6.html">挑戰題</a></li>
+        </ul>
+	  </div><!--close menubar-->
+      <div id="header">  
+        <h1>110540012林以晨</h1>	
+	    <h2>期中考</h2>
       </div><!--close header-->	
 	  <div id="banner_image">
 	    <div id="slider-wrapper">        
           <div id="slider" class="nivoSlider">
             <img src="images/slide1.jpg" alt="" />
             <img src="images/slide2.jpg" alt="" />
-		  </div>
+            <img src="images/slide3.jpg" alt="" />
+		  </div><!--close slider-->
 		</div><!--close slider-wrapper-->
-	  </div><!--close banner_image-->			  
+	  </div><!--close banner_image-->		  
       <div id="content">
         <div class="content_item">
-          <h1>判別是否及格？</h1>
+          <h1 class= "s3">設定表格條狀紋理</h1>
           <hr>
-          <input class=s3 id=t1 type="text" value="55" size="5">
-          <input class=s2 id=t2 onclick="show()" type="button" value="判別是否及格？">
-          <p id="p1" class="s3">
+          <p class="s4">顏色1：<input class="s1" type="button" onclick=show1() value="粉色"></p> 
+          <p class="s4">顏色2：<input class="s1" type="button" onclick=show2() value="黃色"></p> 
+          <table border="1" width="80%">
+            <tr >
+                <td id="a1" class="s1">姓名</td>
+                <td id="b1" class="s1">數學</td>
+            </tr>
+            <tr>
+                <td id="a2" class="s1">約翰</td>
+                <td id="b2" class="s1">90</td>
+            </tr>
+            <tr>
+                <td id="a3" class="s1">艾咪</td>
+                <td id="b3" class="s1">92</td>
+            </tr>
+            <tr>
+              <td id="a4" class="s1">彼得</td>
+              <td id="b4" class="s1">75</td>
+          </tr>
+          <tr>
+            <td id="a5" class="s1">蘇珊</td>
+            <td id="b5" class="s1">99</td>
+        </tr>
+        <tr>
+          <td id="a6" class="s1">湯姆</td>
+          <td id="b6" class="s1">62</td>
+      </tr>
+      <tr>
+        <td id="a7" class="s1">捷克</td>
+        <td id="b7" class="s1">72</td>
+    </tr>
+        </table>
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
@@ -126,9 +162,7 @@
       </div><!--close content-->	
     </div><!--close site_content-->	
     <div id="footer">  
-	  <div id="footer_content">
-      版權所有，© designed by 林以晨，2023
-      </div><!--close footer_content-->	
+      <p>©版權所有 2024 110540012 林以晨</p>
     </div><!--close footer-->	
   </div><!--close main-->	
 </body>
