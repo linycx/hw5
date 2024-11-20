@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>110540012林以晨</title>
+  <title>110540012林以晨作業11</title>
   <meta name="description" content="free website template" />
   <meta name="keywords" content="enter your keywords here" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -25,71 +25,79 @@
         $('#slider').nivoSlider();
     });
     </script>
- <script>
-    function show()
-  {
-    a1 = id1.value
-    a2 = parseInt(id2.value)
-    a3 = id3.value
-    if (a2==123)
-      {
-        document.getElementById("p1").innerHTML = a1+"，你已成功登入網站，你的生日是"+a3
-      }
-      else
-      {
-        document.getElementById("p1").innerHTML = a1+"，你的密碼錯誤"
-      }
+<script>
+  function show1()
+  {      
+    p1.src="images/image2.png"
+    document.getElementById("t1").innerHTML = "滑鼠滑過"
   }
+  function show2()
+  {
+    p1.src="images/image1.png"
+    document.getElementById("t1").innerHTML = "滑鼠離開"
+
+  }
+  function show3()
+  {
+    p1.src="images/image3.png"
+    document.getElementById("t1").innerHTML = "滑鼠按下"
+
+  }
+  function show4()
+  {
+    p1.src = "images/p1.png"
+    document.getElementById("t1").innerHTML = "滑鼠放開"
+
+  }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P8QL4NXVT1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P8QL4NXVT1');
 </script>
 </head>
 
 <body>
   <div id="main">	
-    <div id="site_content">  
-	  <div id="menubar">
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">首頁</a></li>
-          <li><a href="a1.html">第1題</a></li>
-          <li><a href="a2.html">第2題</a></li>
-          <li><a href="a3.html">第3題</a></li>
-          <li><a href="a4.html">GSC截圖</a></li>
-          <li><a href="a5.html">GA截圖</a></li>
-          <li><a href="a6.html">挑戰題</a></li>
-        </ul>
-	  </div><!--close menubar-->
-      <div id="header">  
-        <h1>110540012林以晨</h1>	
-	    <h2>期中考</h2>
+	<div id="menubar">
+      <ul class="lavaLampWithImage" id="lava_menu">
+        <li class="current"><a href="index.html">首頁</a></li>
+        <li><a href="a1.html">第一題</a></li>
+        <li><a href="a2.html">第二題</a></li>
+        <li><a href="a3.html">第三題</a></li>
+        <li><a href="a4.html">第四題</a></li>
+        <li><a href="a5.html">GSC截圖</a></li>
+        <li><a href="a6.html">GA截圖</a></li>
+      </ul>
+	</div><!--close menubar-->	    
+	<div id="site_content">        	  
+	  <div id="header"> 
+        <div id="header_name"> 	  
+          <h1>林以晨 作業11</h1>
+        </div><!--close header_name-->	
+        <div id="header_slogan"> 		
+	      <h2>Company Slogan Goes Here</h2>
+		 </div><!--close header_slogan-->	
       </div><!--close header-->	
 	  <div id="banner_image">
 	    <div id="slider-wrapper">        
           <div id="slider" class="nivoSlider">
             <img src="images/slide1.jpg" alt="" />
             <img src="images/slide2.jpg" alt="" />
-            <img src="images/slide3.jpg" alt="" />
-		  </div><!--close slider-->
+		  </div>
 		</div><!--close slider-wrapper-->
-	  </div><!--close banner_image-->		  
+	  </div><!--close banner_image-->			  
       <div id="content">
         <div class="content_item">
-          <h1 class="s1">會員登入</h1>
+          <h1>Welcome to your website</h1>
+          <h1>滑鼠滑過變化圖片</h1>
           <hr>
-          <p>
-            <label class="s4">帳號</label>
-            <input id="id1" class="s3" type="text">
-            </p>
-            <p>
-            <label class="s4">密碼</label>
-            <input id="id2" class="s3" type="password">
-            </p>
-            <p>
-            <label class="s4">生日</label>
-            <input id="id3" class="s3" type="date">
-            </p>
-            <p>
-              <input class="s2" type="button" onclick="show()"value="登入">
-            </p>
-            <p class="s2" id="p1"></p>
+          <img id="p1" onmousedown="show3()" onmouseup="show4()" onmouseover="show1()" onmouseout="show2()" src="images/image1.png">
+          <p class="s1" id="t1"></p>
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
@@ -129,7 +137,9 @@
       </div><!--close content-->	
     </div><!--close site_content-->	
     <div id="footer">  
-      <p>©版權所有 2024 110540012 林以晨</p>
+	  <div id="footer_content">
+      版權所有，© designed by 林以晨，2023
+      </div><!--close footer_content-->	
     </div><!--close footer-->	
   </div><!--close main-->	
 </body>
